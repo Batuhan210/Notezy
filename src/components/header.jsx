@@ -2,9 +2,17 @@ import React from "react";
 
 
 function Header() {
+
+    function refreshPage() {
+        window.location.reload();
+    }
+    
     return (
         <header>
-            <h1>Notezy</h1>
+            <h1 onClick={refreshPage}
+                style={{cursor: "pointer"}}
+                >Notezy
+            </h1>
         </header>
     );
 }
